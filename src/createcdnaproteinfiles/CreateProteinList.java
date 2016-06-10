@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package filtercdnafile;
+package createcdnaproteinfiles;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -30,7 +30,7 @@ public class CreateProteinList {
      */
     private void readFile(){
         //path to the file with the protein id's and the conversion factors.
-        Path file =  Paths.get("C:\\Users\\Rutger\\Desktop\\Koe.txt");
+        Path file =  Paths.get("C:\\Users\\Rutger\\Desktop\\conversionfactors.txt");
         Charset charset = Charset.forName("US-ASCII");
         try(BufferedReader reader = Files.newBufferedReader(file, charset)){
             String line;
